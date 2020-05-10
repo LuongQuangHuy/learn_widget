@@ -9,38 +9,37 @@ class Cats extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Cats'),
+          title: Text('Cats' , textAlign: TextAlign.center,),
         ),
         body: Center(
           child: Container(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/c-n-c-nh-con-meo-con-v-t-d-th-ng-730896/'),),
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/c-n-c-nh-con-meo-con-v-t-d-th-ng-617278/'),),
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/con-meo-con-v-t-d-th-ng-loai-v-t-45201/'),),
-
-                    Image.network("https://www.pexels.com/vi-vn/anh/con-meo-con-v-t-d-th-ng-loai-v-t-45201/"),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/01.jpeg'),),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/02.jpeg'),),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/03.jpeg'),),
                   ],
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 ),
                 Row(
                   children: <Widget>[
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/ch-p-nh-d-ng-v-t-con-meo-con-v-t-d-th-ng-57416/')),
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/c-n-c-nh-con-meo-con-v-t-d-th-ng-320014/')),
-                    Container(width: 50, height: 50 ,margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/au-y-m-bu-n-c-i-chan-dung-con-meo-209037/')),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/04.jpeg'),),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/05.jpeg'),),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/06.jpeg'),),
                   ],
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 ),
                 Row(
                   children: <Widget>[
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/c-n-c-nh-chan-dung-c-con-meo-1472999/')),
-                    Container(width: 50, height: 50,margin: EdgeInsets.all(15.0), child: Image.network('https://www.pexels.com/vi-vn/anh/c-n-c-nh-chan-con-meo-con-v-t-69932/')),
-                    Container(width: 50, height: 50, margin: EdgeInsets.all(15.0),child: Image.network('https://www.pexels.com/vi-vn/anh/cai-d-u-c-n-c-nh-ch-p-nh-d-ng-v-t-con-meo-2071873/')),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/07.jpeg'),),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/08.jpeg'),),
+                    Container(width: 100, height: 100, child: Image.asset('assets/images/Cat/09.jpeg'),),
                   ],
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 ),
               ],
             ),
